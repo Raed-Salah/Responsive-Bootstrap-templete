@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">  <!-- for compatibility for  IE -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- for mobile responsive -->
+		<title>Responsive Raed Abo Zaid</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css"> <!-- import bootstrap style -->
+		<!-- NOTE! bootstrap include normalize, So you don't need to import normalize.css -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/myStyle.css">
+		
+		<!--[if lt IE 9]>
+			<script  src="js/html5shiv.min.js"></script>
+			<script  src="js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		
+		<!-- Start Nav -->		<!-- NavBar contains:
+										navbar-brand
+										navbar-toggler (collapse button for mobile view)
+										navbar-collapse( navbar-nav( Nav-items(nav-link) ) )  // (links to nav items )
+										search part ( <form> Tag )
+								-->
+		<nav class="navbar navbar-expand-lg sticky-top navName">
+			<div class="container">
+				  
+				  <a class="navbar-brand" href="#">Raed AbouZaid</a>
+				
+
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					  
+				  		<span class="navbar-toggler-icon"></span>
+					  
+				  </button>
+				
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+						
+						<ul class="navbar-nav mr-auto">
+							
+							  <li class="nav-item active">
+							  	<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+							  </li>
+
+							  <li class="nav-item">
+								<a class="nav-link" href="#">About Us</a>
+							  </li>
+
+							  <li class="nav-item">
+								<a class="nav-link" href="#">Skills</a>
+							  </li>
+
+							  <li class="nav-item">
+								<a class="nav-link" href="#">Education</a>
+							  </li>
+				
+							  <li class="nav-item">
+								<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Portfolio</a>
+							  </li>
+							
+							  <li class="nav-item dropdown">
+
+								<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbarDropdown" role="button"  aria-haspopup="true" aria-expanded="false">
+								  Contacts
+								</a>
+
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								  <a class="dropdown-item" href="#">FaceBook</a>
+								  <a class="dropdown-item" href="#">Instgram</a>
+								  <a class="dropdown-item" href="#">Twitter</a>
+								  <a class="dropdown-item" href="#">LinkedIn</a>
+								  <a class="dropdown-item" href="#">Youtube</a>
+								  <div class="dropdown-divider"></div>
+								  <a class="dropdown-item" href="#">My Website</a>
+								</div>
+
+							  </li>
+							
+						</ul>
+						
+						<form class="form-inline my-2 my-lg-0">
+						  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						  <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+						</form>
+						
+					</div>
+			</div>		
+		</nav>
+		<!-- End Nav -->
+		
+		<!-- Start Carousel (  Slider )-->	<!-- carousel with:
+													carousel-fade
+													intervals
+													Indicators
+													Inner Content
+													Captions
+													Controls
+												-->
+		<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="500000">
+			<!-- Crossfade:
+				* Add .carousel-fade to your carousel to animate slides with a fade transition instead of a slide.
+				i.e: class="carousel slide carousal-fade"			
+			-->	
+			
+			<!-- Slider Indicators -->
+		    <ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			
+			<!--Main inner Slider Content-->
+			<div class="carousel-inner">
+			  
+				<div class="carousel-item active">
+					<img src="images/slider-00.jpg" class="d-block w-100" alt="...">
+					<!-- adding caption in carousel-item -->
+					<div class="carousel-caption d-none d-md-block">
+						<h2>First slide label</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet.</p>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+				  <img src="images/slider-01.jpg" class="d-block w-100" alt="...">
+					<!-- adding caption in carousel-item -->
+					<div class="carousel-caption d-none d-md-block">
+						<h2>Second slide label</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet.</p>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+				  <img src="images/slider-02.jpg" class="d-block w-100" alt="...">
+					<!-- adding caption in carousel-item -->
+					<div class="carousel-caption d-none d-md-block">
+						<h2>Third slide label</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet.</p>
+					</div>
+				</div>
+		
+			</div>
+			
+			<!-- Slider Controls -->
+			<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    			<span class="sr-only">Previous</span>
+  			</a>
+			
+			<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    			<span class="sr-only">Next</span>
+  			</a>
+		
+		</div>
+		<!-- end Carousel ( Slider  )-->
+
+		<!-- Start Section "about" -->
+		<section class="about text-center">
+			<div class="container">
+				<h1> Meet Our Junior Front End Developer </h1>
+				<p class="lead"> Let me introduce myself to you, my name is <span>Raed Salah Hassan</span>, 26 years, I've a Bachlor of Computer Science Engineering </p>
+			</div>
+		</section>
+		<!-- End Section "about" -->
+
+		<!-- Start Features Section  -->
+		<section class="features text-center">
+			<div class="container">
+				<h1> Our Features </h1>
+				<div class="row">
+					
+					<div class="col-lg-3 col-md-6 col-xs-12">
+						<div class="feat">
+							<svg class="bi bi-tools" width="30px" height="30px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							  <path fill-rule="evenodd" d="M0 1l1-1 3.081 2.2a1 1 0 01.419.815v.07a1 1 0 00.293.708L10.5 9.5l.914-.305a1 1 0 011.023.242l3.356 3.356a1 1 0 010 1.414l-1.586 1.586a1 1 0 01-1.414 0l-3.356-3.356a1 1 0 01-.242-1.023L9.5 10.5 3.793 4.793a1 1 0 00-.707-.293h-.071a1 1 0 01-.814-.419L0 1zm11.354 9.646a.5.5 0 00-.708.708l3 3a.5.5 0 00.708-.708l-3-3z" clip-rule="evenodd"/>
+							  <path fill-rule="evenodd" d="M15.898 2.223a3.003 3.003 0 01-3.679 3.674L5.878 12.15a3 3 0 11-2.027-2.027l6.252-6.341A3 3 0 0113.778.1l-2.142 2.142L12 4l1.757.364 2.141-2.141zm-13.37 9.019L3.001 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z" clip-rule="evenodd"/>
+							</svg>
+							<h5>100% Responsive</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet.</p>
+						</div>	
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-xs-12">
+						<div class="feat">
+							<svg class="bi bi-person-check-fill" width="30px" height="30px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							  <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 100-6 3 3 0 000 6zm9.854-2.854a.5.5 0 010 .708l-3 3a.5.5 0 01-.708 0l-1.5-1.5a.5.5 0 01.708-.708L12.5 7.793l2.646-2.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+							</svg>
+							<h5> Retina Ready</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet.</p>
+						</div>	
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-xs-12">
+						<div class="feat">
+							<svg class="bi bi-speaker" width="30px" height="30px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							  <path d="M9 4a1 1 0 11-2 0 1 1 0 012 0zm-2.5 6.5a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"/>
+							  <path fill-rule="evenodd" d="M4 0a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V2a2 2 0 00-2-2H4zm6 4a2 2 0 11-4 0 2 2 0 014 0zM8 7a3.5 3.5 0 100 7 3.5 3.5 0 000-7z" clip-rule="evenodd"/>
+							</svg>
+							<h5>Awesome Display</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet.</p>
+						</div>	
+					</div>
+					
+					<div class="col-lg-3 col-md-6 col-xs-12">
+						<div class="feat">
+							<svg class="bi bi-pencil-square" width="30px" height="30px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							  <path d="M15.502 1.94a.5.5 0 010 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 01.707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 00-.121.196l-.805 2.414a.25.25 0 00.316.316l2.414-.805a.5.5 0 00.196-.12l6.813-6.814z"/>
+							  <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 002.5 15h11a1.5 1.5 0 001.5-1.5v-6a.5.5 0 00-1 0v6a.5.5 0 01-.5.5h-11a.5.5 0 01-.5-.5v-11a.5.5 0 01.5-.5H9a.5.5 0 000-1H2.5A1.5 1.5 0 001 2.5v11z" clip-rule="evenodd"/>
+							</svg>
+							<h5>Well Documented</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet.</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<!-- end Features Section  -->
+		
+		<!-- start Testimonials Section  -->
+		<section class="testimonials text-center">
+			<div class="container">
+				<h1> What Our Clients Say </h1>
+				
+				<div id="testimonialsCarousel" class="carousel slide" data-ride="carousel" data-interval="1000">
+					
+					<!--Main inner Slider Content-->
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet.</p>
+							<span> Raed Salah </span>
+						</div>
+
+						<div class="carousel-item">
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet.</p>
+							<span> Marwa Mahmoud </span>
+						</div>
+
+						<div class="carousel-item">
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet.</p>
+							<span> Mahmoud Lotfy </span>
+						</div>
+						
+						<div class="carousel-item">
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet.</p>
+							<span> Hamdy Kamel </span>
+						</div>
+					</div>
+
+					<!-- Slider Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#testimonialsCarousel" data-slide-to="0" class="active">
+							<img src="images/face1.png" alt="face1">
+						</li>
+						<li data-target="#testimonialsCarousel" data-slide-to="1">
+							<img src="images/face2.png" alt="face2">
+						</li>
+						<li data-target="#testimonialsCarousel" data-slide-to="2">
+							<img src="images/face3.jpg" alt="face3">
+						</li>
+						<li data-target="#testimonialsCarousel" data-slide-to="3">
+							<img src="images/face4.png" alt="face4">
+						</li>
+					</ol>
+
+				</div>
+			</div>
+		</section>
+		<!-- End Testimonials Section  -->
+		
+		<!-- Start Table price section -->
+		<section class="table-price text-center">
+			<div class="container">
+				<h1> Our Amazing Plans </h1>
+				
+				<div class="row">
+					
+					<div class="col-lg-3 col-md-6 col-xs-12">
+						<div class="plan">
+							<h2 class="text-warning">Monthly</h2>
+							<h4>$40</h4>
+							<p class="lead">space: 30GB <br> Emails: 20 <br> IPs: 5 IP <br> Databases: 10DB <br> FTP accounts: 5 </p>
+							<button class="btn btn-warning">Order Now</button>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-xs-12">
+						<div class="plan">
+							<h2 class="text-danger">3-Month </h2>
+							<h4>$60</h4>
+							<p class="lead">space: 40GB <br> Emails: 35 <br> IPs: 10 IP <br> Databases: 15DB <br> FTP accounts: 8 </p>
+							<button class="btn btn-danger">Order Now</button>
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-xs-12">
+						<div class="plan">
+							<h2 class="text-primary">6-Month</h2>
+							<h4>$80</h4>
+							<p class="lead">space: 60GB <br> Emails: 50 <br> IPs: 15 IP <br> Databases: 20DB <br> FTP accounts: 12 </p>
+							<button class="btn btn-primary">Order Now</button>
+						</div>	
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-xs-12">
+						<div class="plan">
+							<h2 class="text-success">Yearly</h2>
+							<h4>$100</h4>
+							<p class="lead">space: 100GB <br> Emails: 100 <br> IPs: 25 IP <br> Databases: 30DB <br> FTP accounts: 18 </p>
+							<button class="btn btn-success">Order Now</button>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<!-- End Table price section -->
+		
+		<!-- Start Our team section -->
+		<section class="our-team text-center">
+			<div class="team"> <!-- for the plur background on the blured background -->
+				<div class="container">
+					<h1> Meet our Awesome Team</h1>
+					<div class="row">
+						<div class="member col-lg-4 col-sm-12 col-xs-12">
+							<img class="rounded-circle" src="images/mem1.jpg" alt="SEO">
+							<h3> Raed Abou-Zaid </h3>
+							<p>SEO Of Our Company</p>
+							<div class="social">
+								<a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a>
+								<a href="#"><i class="fa fa-facebook-square fa-lg"></i></a>
+								<a href="#"><i class="fa fa-twitter-square fa-lg"></i></a>
+								<a href="#"><i class="fa fa-youtube-square fa-lg"></i></a>
+							</div>
+						</div>
+						
+						<div class="member col-lg-4 col-sm-6 col-xs-12">
+							<img class="rounded-circle" src="images/mem2.png" alt="Raed">
+							<h3> Raed salah </h3>
+							<p>Front-End Developer</p>
+							<div class="social">
+								<a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a>
+								<a href="#"><i class="fa fa-facebook-square fa-lg"></i></a>
+								<a href="#"><i class="fa fa-twitter-square fa-lg"></i></a>
+								<a href="#"><i class="fa fa-youtube-square fa-lg"></i></a>
+							</div>
+						</div>
+						
+						<div class="member col-lg-4 col-sm-6 col-xs-12">
+							<img class="rounded-circle" src="images/mem3.jpg" alt="Samir">
+							<h3> Samir Hashish </h3>
+							<p>Back-End Developer</p>
+							<div class="social">
+								<a href="#"><i class="fa fa-google-plus-square fa-lg"></i></a>
+								<a href="#"><i class="fa fa-facebook-square fa-lg"></i></a>
+								<a href="#"><i class="fa fa-twitter-square fa-lg"></i></a>
+								<a href="#"><i class="fa fa-youtube-square fa-lg"></i></a>
+							</div>
+						</div>
+	
+					</div>
+				</div>
+			</div>	
+		</section>
+		<!-- End Our team section -->
+		
+		<!-- Start Subscribe Section -->
+		<section class="subscribe text-center">
+			<div class="container">
+				<h1>Keep in touch</h1>
+				<p class="lead"> Subscribe us to recieve our recent news </p>
+				<form class="form-inline">
+					<input class="form-control" type="text" placeholder="Enter your Email here" size="50">
+					<button class="btn btn-danger"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i> Subscribe</button>
+				</form>
+			</div>
+		</section>
+		<!-- End Subscribe Section -->
+		
+		<!-- start statistics section -->
+		<section class="statistics text-center">
+			<div class="our-stats">
+				<div class="container">
+					<h1> Our Main statistics </h1>
+					<div class="row">
+							<div class="stats col-lg-2 col-md-4 col-sm-6 col-xs-12">
+								<i class="fa fa-thumbs-o-up fa-4x" aria-hidden="true"></i>
+								<h2>98,525</h2>
+								<p class="lead">Likes</p>
+							</div>
+
+							<div class="stats col-lg-2 col-md-4 col-sm-6 col-xs-12">
+								<i class="fa fa-life-ring fa-4x" aria-hidden="true"></i>
+								<h2>60,410</h2>
+								<p class="lead">Followers</p>
+							</div>
+
+							<div class="stats col-lg-2 col-md-4 col-sm-6 col-xs-12">
+								<i class="fa fa-id-card-o fa-4x" aria-hidden="true"></i>
+								<h2>1266</h2>
+								<p class="lead">Posts</p>
+							</div>
+
+							<div class="stats col-lg-2 col-md-4 col-sm-6 col-xs-12">
+								<i class="fa fa-comments fa-4x" aria-hidden="true"></i>
+								<h2>114,457</h2>
+								<p class="lead">Comments</p>
+							</div>
+
+							<div class="stats col-lg-2 col-md-4 col-sm-6 col-xs-12">
+								<i class="fa fa-bell fa-4x" aria-hidden="true"></i>
+								<h2>1,58M</h2>
+								<p class="lead">Subscribers</p>
+							</div>
+
+							<div class="stats col-lg-2 col-md-4 col-sm-6 col-xs-12">
+								<i class="fa fa-thumbs-o-down fa-4x" aria-hidden="true"></i>
+								<h2>159</h2>
+								<p class="lead">reports</p>
+							</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end statistics section	-->
+		
+		<!--		start skills section	-->
+		<section class="skills">
+			<div class="container">
+				<h1 class="text-center"> Our Skills </h1>
+				<div class="row">
+					<div class="col-md-5">
+						<div class="progress text-center">
+							<div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:90%">
+								HTML/CSS	90%
+							</div>
+						</div>
+						
+						<div class="progress">
+							<div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:60%">
+								JavaScript	60%
+							</div>
+						</div>
+						
+						<div class="progress">
+							<div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width:50%">
+								Bootstrap...	50%
+							</div>
+						</div>
+						
+						<div class="progress">
+							<div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:20%">
+								wordPress	10%
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-1">
+					</div>
+					
+					<div class="col-md-6">
+						<div class="skills-info">
+							<h2> Team Responsibilities:</h2>
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetur adipiscing elit,Lorem ipsum dolor sit amet.</p>
+							<button type="button" class="btn btn-outline-info btn-sm">Talk to A Professional</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--		end skills section	-->
+		
+		<!--		start Contact Us section	-->
+		<section class="Contact_Us">
+			<div class="contact">
+				<div class="container text-center">
+					<i class="fa fa-comments fa-4x" aria-hidden="true"></i>
+					<h1> Your opinion is <span>Important</span></h1>
+					<p class="lead">Tell Us what is your feedback about us &amp; what you want more</p>
+
+					<form role="form">
+						<div class="row">
+							
+							<div class="col-lg-6">
+								<div class="form-group">
+									<input class="form-control bg-dark" type="text" placeholder="Username">
+								</div>
+
+								<div class="form-group">
+									<input class="form-control bg-dark" type="email" placeholder="Email: example@example.com">
+								</div>
+								
+								<div class="form-group">
+									<input class="form-control bg-dark" type="tel" placeholder="Tel">
+								</div>
+							</div>
+							
+							<div class="col-lg-6">
+								<div class="form-group">
+									<textarea class="form-control bg-dark" type="text" placeholder="Write A message..."></textarea>
+								</div>
+
+								<div class="form-group">
+									<button type="button" class="btn btn-danger btn-block">Contact Us</button>
+								</div>
+							</div>
+							
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!--		End Contact Us section	-->
+		
+		<!-- Start section footer -->
+		<section class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-xs-12">
+						<h3>SiteMap</h3>
+						<ul class="sitemap list-unstyled">
+							<a href="#"><li>Home</li></a>
+							<a href="#"><li>About</li></a>
+							<a href="#"><li>Company</li></a>
+							<a href="#"><li>Code</li></a>
+							<a href="#"><li>Design</li></a>
+							<a href="#"><li>Host</li></a>
+							<a href="#"><li>Solutions</li></a>
+							<a href="#"><li>Sitemap</li></a>
+							<a href="#"><li>Contact</li></a>
+						</ul>
+
+						<ul class="site-icons list-unstyled">
+							<a href="#"><li><img src="images/social_icons/pinterest.png" alt="pinterest"></li></a>
+							<a href="#"><li><img src="images/social_icons/google-plus.png" alt="google+"></li></a>
+							<a href="#"><li><img src="images/social_icons/twitter.png" alt="twitter"></li></a>
+							<a href="#"><li><img src="images/social_icons/youtube.png" alt="Youtube"></li></a>
+							<a href="#"><li><img src="images/social_icons/linkedin.png" alt="linkedIn"></li></a>
+							<a href="#"><li><img src="images/social_icons/Instagram.png" alt="instgram"></li></a>
+						</ul>	
+					</div>
+					
+					<div class="col-lg-4 col-md-6 col-xs-12">
+						<h3>Latest Article</h3>
+						<div class="media">
+							<img class="align-self-center" src="images/articles/article1.png" alt="programming"  height="85px">
+							<div class="media-body p-3">
+								<h5>Programming</h5>
+								<p>this is latest programming languages</p>
+							</div>
+						</div>
+						
+						<div class="media">
+							<img class="align-self-center" src="images/articles/article2.png" alt="Web Design" height="85px">
+							<div class="media-body p-3">
+								<h5>Web Design</h5>
+								<p>this is latest design tools,consectetur adipiscing</p>
+							</div>
+						</div>
+						
+						<div class="media">
+							<img class="align-self-center" src="images/articles/article3.jpg" alt="web Developing" height="85px">
+							<div class="media-body p-3">
+								<h5>web Developing</h5>
+								<p>this is latest develop tools,consectetur adipiscing</p>
+							</div>	
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-12 col-xs-12">
+						<h3> Our Awesome Work </h3>
+						<div class="our_work">
+							<img class="img-thumbnail mr-4 mb-4" src="images/work1.jpg" alt="awesome work 1">
+							<img class="img-thumbnail mb-4" src="images/work2.jpg" alt="awesome work 2">
+							<img class="img-thumbnail mr-4" src="images/work3.jpg" alt="awesome work 3">
+							<img class="img-thumbnail " src="images/work4.png" alt="awesome work 4">
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="copyrights bg-dark text-center">
+				<p class="lead">Copyright &copy; 2020 Raed AbouZaid Agency.</p>
+			</div>
+		</section>
+		
+		<!-- End  section footer  -->
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<script src="js/jquery-3.4.1.js"></script>		<!-- import jQuery script to make bootstrap work correctly  -->
+		<script src="js/bootstrap.min.js"></script>		<!-- import bootstrap script -->
+		<script src="js/myScript.js"></script>			<!-- import  my script file -->
+	</body>
+</html>

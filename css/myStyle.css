@@ -1,0 +1,350 @@
+/*
+body{
+	height: 7000px;
+}
+*/
+
+/*		Start Nav		*/
+.navName{
+	width:100%;
+	background-color: black;
+}
+nav a{
+	color: white;
+}
+nav a:hover{
+	color: red;
+}
+/*		end Nav		*/
+
+
+/*		Start carousel	*/
+.carousel-caption{
+	color: black;
+}
+/*		end carousel	*/
+
+/* Start Section about */
+.about{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.about .lead{
+	font-size: 30px;
+	color: cadetblue;
+	padding-top: 25px;
+}
+
+.about h1{
+	color: darkred;
+	font-weight: bold;
+}
+
+.about .lead span{
+	color: red;
+}
+/* end Section about */
+
+/* Start Section Features */
+.features{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #e0e0e3;
+}
+
+.features h1{
+	font-weight: bold;
+	padding-bottom: 100px;
+	color: darkred;
+}
+
+.features .feat{
+	margin-bottom: 30px;
+}
+
+.features svg{
+	margin-bottom: 10px;
+}
+/* End Section Features */
+
+/* Start testimonials */
+.testimonials{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.testimonials h1{
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: darkred;
+}
+
+.testimonials .lead{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.testimonials span{
+	font-size: 18px;
+	font-weight: bold;
+	color: #E41B17;
+}
+
+.testimonials .carousel-inner{
+	min-height: 160px;
+}
+.testimonials .carousel-indicators{
+	position: static;
+	padding-top: 20px;
+}
+.testimonials .carousel-indicators li{
+	text-indent: 0;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 10px;
+}
+.testimonials .carousel-indicators li.active{
+	border: 3px solid #E41B17;
+		
+}
+.testimonials .carousel-indicators li img{
+	max-width: 100%;
+	max-height: 100%;
+}
+/* End testimonials */
+
+/* Start Table price ( plans ) section */
+.table-price{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #4d6fa1;/*#84ade7 #1e3351*/
+}
+.table-price h1{
+	font-weight: bold;
+	margin-bottom: 50px;
+	color: white;
+}
+
+.table-price .plan{
+	border: 1px solid black;
+	background: #FFF;
+	padding-top: 10px;
+	padding-bottom: 25px;
+	border-radius:10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.table-price .plan h2{
+	color: darkred;
+}
+.table-price .plan h4{
+	font-weight: bold;
+	color: orangered;
+}
+.table-price .plan p{
+	line-height: 2.3;
+}
+
+.table-price .plan svg{
+	vertical-align: unset;
+	color: yellow;
+}
+/* end Table price  ( plans ) section */
+
+
+/*	Start Our team section	*/
+.our-team{
+	background:url("../images/ourTeam.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover; /* to make background-image extend all over the width whatever X-ZoomOut you make */
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 500px;
+}
+
+.our-team .team{
+	background: rgba(2,2,2,0.75);
+	min-height: 500px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.our-team .team .member{
+	margin-bottom: 20px;
+}
+.our-team .team img{
+	width: 200px;
+	height: 200px;
+}
+
+.our-team h1{
+	font-weight: bold;
+	margin-bottom: 50px;
+	color: white;
+}
+
+.our-team h3{
+	margin-top: 20px;
+	color: darkred;
+	
+}
+.our-team p,.our-team .social a{
+	color: #FFF;
+}
+/*	End Our team section	*/
+
+/*	start subscribe section	*/
+.subscribe{
+	min-height: 400px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.subscribe h1{
+	color: darkred;
+	margin: 20px;
+}
+.subscribe .form-inline{
+	display: block;
+}
+/*	End subscribe section	*/
+
+/*	start statistics section	*/
+.statistics{
+	background:url("../images/statistic.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover; /* to make background-image extend all over the width whatever X-ZoomOut you make */
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 500px;
+}
+.statistics .our-stats{
+	background: rgba(2,2,2,0.25);
+	min-height: 500px;
+}
+.statistics .our-stats .stats{
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	margin-bottom: 20px;
+}
+.statistics .our-stats .stats:hover{
+	color: #EEE;
+}
+.statistics h1{
+	color: darkred;
+	padding-top: 60px;
+	padding-bottom: 90px;
+}
+.statistics i{
+	margin-bottom: 10px;
+}
+/*	end statistics section	*/
+
+
+/*	start skills section	*/
+.skills{
+	margin-top: 60px;
+	margin-bottom: 90px;
+}
+.skills h1{
+	color: darkred;
+	padding-bottom: 50px;
+}
+
+.skills .col-md-5{
+	margin-bottom: 30px;
+}
+.skills .progress{
+	margin-bottom: 33px;
+	height: 20px;
+}
+.skills .progress .progress-bar{
+	font-weight: bold;
+	text-align: left;
+	text-indent: 10px;
+}
+.skills-info h2{
+	font-weight: bold;
+}
+/*	end skills section	*/
+
+/*	start  section	*/
+.Contact_Us {
+	background: url(../images/Contact_bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover; /* to make background-image extend all over the width whatever X-ZoomOut you make */
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 500px;
+}
+
+.Contact_Us .contact{
+	padding-top: 50px;
+	margin-bottom: 50px;
+	background: rgba(2,2,2,0.25);
+	min-height: 500px;
+	color: #FFF;
+}
+
+.Contact_Us .contact form{
+	margin-top: 60px;
+}
+.Contact_Us .contact form textarea{
+    height: 92px;
+}
+.Contact_Us .contact form .form-control{
+	border: none;
+	color: #FFF;
+}
+
+/*	end Contact Us section	*/
+
+/*	start Footer	*/
+.footer .container{
+	margin-bottom: 30px;
+}
+
+.footer h3{
+	color: darkred;
+	font-weight: bold;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+.footer .sitemap li{
+	float: left;
+	width: 33.333%;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+.footer .site-icons li{
+	margin-top: 20px;
+	float: left;
+	width: 16.666%;
+	opacity: 80%;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.footer .site-icons li:hover{
+	opacity: 1.5;
+}
+
+.footer .our_work img{
+	width: 40%;
+}
+
+
+.copyrights{
+	color: #FFF;
+	height: 40px;
+	line-height: 40px;
+}
+.copyrights p{
+	margin-bottom: 0px;
+}
+/*	end Footer	*/
